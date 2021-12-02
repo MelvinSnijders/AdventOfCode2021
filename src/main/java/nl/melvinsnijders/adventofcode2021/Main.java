@@ -1,7 +1,7 @@
 package nl.melvinsnijders.adventofcode2021;
 
-import nl.melvinsnijders.adventofcode2021.day1.Day1;
-import nl.melvinsnijders.adventofcode2021.day1.Day2;
+import nl.melvinsnijders.adventofcode2021.days.Day1;
+import nl.melvinsnijders.adventofcode2021.days.Day2;
 
 public class Main {
 

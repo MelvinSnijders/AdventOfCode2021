@@ -1,4 +1,4 @@
-package nl.melvinsnijders.adventofcode2021.day1;
+package nl.melvinsnijders.adventofcode2021.days;
 
 import lombok.Getter;
 import nl.melvinsnijders.adventofcode2021.IAdventDay;

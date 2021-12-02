@@ -1,7 +1,6 @@
-package nl.melvinsnijders.adventofcode2021.day1;
+package nl.melvinsnijders.adventofcode2021.days;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import nl.melvinsnijders.adventofcode2021.AdventInputReader;
 import nl.melvinsnijders.adventofcode2021.IAdventDay;
