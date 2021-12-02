@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "6.3.0"
+}
+
+group 'nl.melvinsnijders'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
