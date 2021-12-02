@@ -4,5 +4,6 @@ public interface IAdventDay {
 
     int part1();
     int part2();
+    int getDay();
 
 }

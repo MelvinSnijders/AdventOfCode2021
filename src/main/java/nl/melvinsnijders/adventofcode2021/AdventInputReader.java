@@ -4,8 +4,9 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.function.Function;
 
-public class AdventInputReader {
+public class AdventInputReader<T> {
 
     private final String fileName;
 
@@ -13,19 +14,20 @@ public class AdventInputReader {
         this.fileName = "day_" + day + ".txt";
     }
 
-    public List<Integer> readNumbers() {
+    public List<T> read(Function<String, T> parse) {
 
         InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(this.fileName);
         Scanner scanner = new Scanner(inputStream);
 
-        List<Integer> lineList = new LinkedList<>();
+        List<T> list = new LinkedList<>();
 
         while(scanner.hasNextLine()) {
             String line = scanner.nextLine();
-            lineList.add(Integer.parseInt(line));
+            T parsed = parse.apply(line);
+            list.add(parsed);
         }
 
-        return lineList;
+        return list;
 
     }
 

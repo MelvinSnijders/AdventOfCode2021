@@ -1,5 +1,6 @@
 package nl.melvinsnijders.adventofcode2021.day1;
 
+import lombok.Getter;
 import nl.melvinsnijders.adventofcode2021.IAdventDay;
 import nl.melvinsnijders.adventofcode2021.AdventInputReader;
 
@@ -8,10 +9,11 @@ import java.util.List;
 public class Day1 implements IAdventDay {
 
     private final List<Integer> input;
+    @Getter private final int day = 1;
 
     public Day1() {
-        AdventInputReader adventInputReader = new AdventInputReader(1);
-        this.input = adventInputReader.readNumbers();
+        AdventInputReader<Integer> adventInputReader = new AdventInputReader<>(this.day);
+        this.input = adventInputReader.read(Integer::parseInt);
     }
 
     @Override
