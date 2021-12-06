@@ -31,5 +31,13 @@ public class AdventInputReader<T> {
 
     }
 
+    public String readAsString() {
+
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(this.fileName);
+        Scanner scanner = new Scanner(inputStream);
+        return scanner.useDelimiter("\\Z").next();
+
+    }
+
 
 }
