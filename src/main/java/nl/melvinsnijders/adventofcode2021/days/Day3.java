@@ -68,8 +68,6 @@ public class Day3 implements IAdventDay {
                 index++;
             }
 
-            System.out.println(oxygenList);
-
         }
 
         index = 0;
