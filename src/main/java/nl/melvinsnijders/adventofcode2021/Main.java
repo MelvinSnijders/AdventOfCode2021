@@ -2,6 +2,7 @@ package nl.melvinsnijders.adventofcode2021;
 
 import nl.melvinsnijders.adventofcode2021.days.Day1;
 import nl.melvinsnijders.adventofcode2021.days.Day2;
+import nl.melvinsnijders.adventofcode2021.days.Day3;
 
 public class Main {
 
@@ -9,6 +10,7 @@ public class Main {
 
         runDay(new Day1());
         runDay(new Day2());
+        runDay(new Day3());
 
     }
 
