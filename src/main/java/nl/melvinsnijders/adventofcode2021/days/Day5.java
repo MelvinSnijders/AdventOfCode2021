@@ -16,6 +16,10 @@ public class Day5 implements IAdventDay {
 
     private static final int ARRAY_SIZE = 1000;
 
+    /**
+     * Read and parse the input to a list of lines.
+     */
+
     public Day5() {
         AdventInputReader<Line> adventInputReader = new AdventInputReader<>(this.day);
         this.input = adventInputReader.read(line -> {
@@ -52,6 +56,11 @@ public class Day5 implements IAdventDay {
         return this.calculateOverlaps(grid);
 
     }
+
+    /**
+     * Draw the diagonal lines.
+     * @param grid The grid to draw the lines on.
+     */
 
     private void drawDiagonalLines(int[][] grid) {
 
@@ -111,6 +120,10 @@ public class Day5 implements IAdventDay {
 
     }
 
+    /**
+     * Draw the straight lines.
+     * @param grid The grid to draw the lines on.
+     */
 
     private void drawStraightLines(int[][] grid) {
 
@@ -155,6 +168,12 @@ public class Day5 implements IAdventDay {
         }
 
     }
+
+    /**
+     * Calculate the overlaps in the grid (numbers bigger than 1).
+     * @param grid The grid to calculate the overlaps in.
+     * @return The number of overlaps in the grid.
+     */
 
     private int calculateOverlaps(int[][] grid) {
 
